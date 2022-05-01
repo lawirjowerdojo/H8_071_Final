@@ -7,6 +7,9 @@
 
     <body>
         <h1>Titanic Survivor Prediction</h1>
+        <p>This is a web service where one can try to predict if a passenger survived in the titanic ill-fated voyage.</p>
+        <p>This service requires: cabin class, number of accompanying passengers (siblings/spouse/parents/children), ticket price, embarkation point and the gender of the passenger.</p>
+        <p>To explore more about the model, kindly visit: <a href="https://github.com/lawirjowerdojo/H8_071/blob/master/Final%20Assignment/PYTN_Final_Assgn_71_Levina.ipynb">my github page</a></p>
         <form action="/predict" method="post">
             <label for="pclass">Which class was the passenger travelling in?</label>
             <p style="font-size: 80%;">Please put 1 for first, 2 for second or 3 for third</p>
@@ -28,7 +31,7 @@
             <p style="font-size: 80%;">Please put 0 for Cherbourg, 1 for Queenstown and 2 for Southampton</p>
             <input type="number" name="embarked" id="embarked" required>
             <br><br>
-            <label for="gender">What was the sex of the passenger? :</label>
+            <label for="gender">What was the sex of the passenger?</label>
             <p style="font-size: 80%;">Please input 0 for Female or 1 for Male</p>
             <input type="number" name="gender" id="gender" required>
             <br><br>
