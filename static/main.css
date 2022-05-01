@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+form {
+    background-color: rgb(199, 207, 214);
+    border: 1px solid rgb(139, 145, 139);
+    border-radius: 12px;
+    padding: 12px;
+    margin: 16px;
+    width: fit-content;
+}
+
+.button {
+    background-color: #235e25; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }

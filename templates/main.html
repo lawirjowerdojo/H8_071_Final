@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Titanic Survivors</title>
+
+        <link rel="stylesheet" href="../static/main.css">
+    </head>
+
+    <body>
+        <h1>Titanic Survivor Prediction</h1>
+        <form action="/predict" method="post">
+            <!-- df_clean[['Pclass', 'SibSp', 'Parch', 'Fare', 'Embarked_en','Sex_en']] -->
+            <label for="pclass">Class:</label>
+            <input type="number" name="pclass" id="pclass" min="1" max="3" required>
+            <br><br>
+            <label for="sibsp">How many siblings or spouse did the passenger travel with?</label>
+            <p>Please put 0 if none</p>
+            <input type="number" name="sibsp" id="sibsp" min="0" required>
+            <br><br>
+            <label for="parch">How many parents and/or children did the passenger travel with?</label>
+            <p>Please put 0 if none</p>
+            <input type="number" name="parch" id="parch" min="0" required>
+            <br><br>
+            <label for="fare">How much did the passenger paid for the ticket?:</label>
+            <input type="number" step=0.01 name="fare" id="fare" min="0" required>
+            <br><br>
+            <label for="embarked">Where did the passenger embark?</label>
+            <p>Please put 0 for Cherbourg, 1 for Queenstown and 2 for Southampton</p>
+            <input type="number" name="embarked" id="embarked" required>
+            <br><br>
+            <label for="gender">What was the sex of the passenger? :</label>
+            <p>Please input 0 for Female or 1 for Male</p>
+            <input type="number" name="gender" id="gender" required>
+            <br><br>
+            
+            <!-- <label for="major">Major: </label><br> -->
+
+            <!-- ['Arts', 'Commerce', 'Science']-->
+            <!-- <input type="radio" id="major0" name="major" value="0" required>
+            <label for="major0">Arts</label><br>
+            <input type="radio" id="major1" name="major" value="1" required>
+            <label for="major1">Commerce</label><br>
+            <input type="radio" id="major2" name="major" value="2" required>
+            <label for="major2">Science</label><br><br> -->
+
+            <!--<input type="number" name="major" id="major" min="0" max="2" required>-->
+
+            <input type="submit" value="Create Prediction" class="button">
+        </form>
+        <br>
+        <b>{{ prediction_text }}</b>
+        
+    </body>
+</html>
