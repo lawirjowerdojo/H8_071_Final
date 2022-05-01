@@ -6,7 +6,7 @@ from sklearn.linear_model import LogisticRegression
 import pickle
 
 app = Flask(__name__)
-model = pickle.load(open('model\survivors.pkl', 'rb'))
+model = pickle.load(open('model/survivors.pkl', 'rb'))
 
 @app.route('/')
 def home():
